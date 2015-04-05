@@ -1,0 +1,63 @@
+html, body {
+  height: 100%;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+.notes {
+  list-style: none;
+}
+
+.notes .note {
+  display: inline-block;
+}
+
+.book-treemap {
+  position: relative;
+  height: 80vh;
+  width: 95vw;
+  margin: 0 auto;
+}
+
+.book-treemap .book {
+  overflow: hidden;
+  color: #FFF;
+  box-sizing: border-box;
+  padding: 5px;
+  margin: 3px;
+  border-radius: 3px;
+}
+
+.select-clippings-container {
+  text-align: center;
+}
+
+.select-clippings {
+  position: relative;
+  display: inline-block;
+  background-color: #00bcd4;
+  color: #fff;
+  border-radius: 5px;
+  padding: 5vh 10vh;
+  font-size: 24px;
+  margin: 20vh 20vh 5vh 20vh;
+  box-shadow: 5px 5px 3px 0px rgba(168,163,168,1);
+  transition: all 0.2s;
+  cursor: pointer;
+}
+
+.select-clippings.top {
+  margin-top: 1vh;
+  padding: 2vh 5vh;
+}
+
+.select-clippings .file {
+  position: absolute;
+  opacity: 0;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+}

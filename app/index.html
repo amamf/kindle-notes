@@ -1,0 +1,39 @@
+<!doctype html>
+<html class="no-js">
+  <head>
+    <meta charset="utf-8">
+    <title>Kindle Notes</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" type="text/css">
+    <!-- build:css(.tmp) styles/main.css -->
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <!-- endbuild -->
+  </head>
+  <body>
+    <div class="select-clippings-container">
+      <div class="select-clippings">
+        <span>Open a file with clippings</span>
+        <input class="file" type="file">
+      </div>
+    </div>
+<!--
+   <div class="book-cloud"></div>
+   <div class="notes"></div>
+-->
+    <div class="book-treemap"></div>
+    <!-- build:js(.) scripts/vendor.js -->
+    <!-- bower:js -->
+    <script src="bower_components/d3/d3.js"></script>
+    <!-- endbower -->
+    <script src="bower_components/d3-cloud/d3.layout.cloud.js"></script>
+    <!-- endbuild -->
+    <!-- build:js({app,.tmp}) scripts/main.js -->
+    <script src="scripts/notes-parser.js"></script>
+    <script src="scripts/book-cloud.js"></script>
+    <script src="scripts/book-treemap.js"></script>
+    <script src="scripts/main.js"></script>
+    <!-- endbuild -->
+  </body>
+</html>

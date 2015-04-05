@@ -1,0 +1,8 @@
+{
+  "name": "kindle-notes",
+  "private": true,
+  "dependencies": {
+    "d3": "~3.5.5",
+    "d3-cloud": "~1.0.5"
+  }
+}
