@@ -22,12 +22,21 @@ body {
 }
 
 .book-treemap .book {
+  will-change: transform;
+  transform: translateZ(0);
   overflow: hidden;
   color: #FFF;
   box-sizing: border-box;
   padding: 5px;
   margin: 3px;
   border-radius: 3px;
+  transition: all 0.2s;
+  cursor: pointer;
+}
+
+.book-treemap .book:hover {
+  transform: scale(1.1,1.1);
+  z-index: 1;
 }
 
 .select-clippings-container {
@@ -60,4 +69,5 @@ body {
   top: 0;
   right: 0;
   bottom: 0;
+  cursor: pointer;
 }
