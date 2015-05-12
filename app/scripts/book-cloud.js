@@ -14,7 +14,7 @@ app.BookCloud.prototype.render = function(notes) {
       color = d3.scale.category20(),
       fontSize = d3.scale.linear()
         .domain(d3.extent(books, function(n) { return n.values.length; } ))
-        .range([14, 72]);
+        .range([14, 72]) ;
 
   switch(this.type) {
     case 'svg':

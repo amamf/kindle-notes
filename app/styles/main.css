@@ -6,14 +6,6 @@ body {
   font-family: "Open Sans", sans-serif;
 }
 
-.notes {
-  list-style: none;
-}
-
-.notes .note {
-  display: inline-block;
-}
-
 .book-treemap {
   position: relative;
   height: 80vh;
@@ -35,8 +27,70 @@ body {
 }
 
 .book-treemap .book:hover {
-  transform: scale(1.1,1.1);
+  transform: scale(1.1, 1.1);
   z-index: 1;
+}
+
+.book-treemap .book.expanded {
+  transform: none !important;
+  z-index: 2 !important;
+  top: 0 !important;
+  left: 0 !important;
+  width: 100% !important;
+  height: 100% !important;
+}
+
+.book-treemap .book .notes {
+  display: none;
+  padding-top: 5px;
+  padding-right: 5px;
+  padding-bottom: 5px;
+  font-size: 13px;
+  overflow: auto;
+  box-sizing: border-box;
+  max-height: 90%;
+  background: rgba(0, 0, 0, 0.1);
+  border-radius: 3px;
+}
+
+.book-treemap .book .notes .note {
+  padding: initial;
+}
+
+.book-treemap .book .notes-count {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  padding: 5px;
+  border-radius: 3px;
+}
+
+.book-treemap .book .close {
+  display: none;
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  height: 18px;
+  width: 18px;
+  border-radius: 9px;
+  text-align: center;
+  color: #fff;
+  font-weight: bold;
+  font-size: 10px;
+  background: rgba(1, 1, 1, 0.1);
+}
+
+.book-treemap .book .close::after {
+  content: '\2716';
+  vertical-align: middle;
+}
+
+.book-treemap .book.expanded .notes {
+  display: block;
+}
+
+.book-treemap .book.expanded .close {
+  display: block;
 }
 
 .select-clippings-container {

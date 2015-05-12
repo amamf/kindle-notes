@@ -1,0 +1,29 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'C:\\ProgramData\\chocolatey\\lib\\nodejs.commandline.0.10.33\\tools\\node.exe',
+1 verbose cli   'C:\\ProgramData\\chocolatey\\lib\\npm.1.4.9\\tools\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'uninstall',
+1 verbose cli   'jscs',
+1 verbose cli   '-g' ]
+2 info using npm@1.4.9
+3 info using node@v0.10.33
+4 info C:\ProgramData\chocolatey\lib\nodejs.commandline.0.10.33\tools\node_modules\jscs unbuild
+5 info preuninstall jscs@1.12.0
+6 info uninstall jscs@1.12.0
+7 verbose true,C:\ProgramData\chocolatey\lib\nodejs.commandline.0.10.33\tools\node_modules,C:\ProgramData\chocolatey\lib\nodejs.commandline.0.10.33\tools\node_modules unbuild jscs@1.12.0
+8 verbose C:\ProgramData\chocolatey\lib\nodejs.commandline.0.10.33\tools,[object Object] binRoot
+9 error Error: EPERM, unlink 'C:\ProgramData\chocolatey\lib\nodejs.commandline.0.10.33\tools\jscs.cmd'
+9 error  { [Error: EPERM, unlink 'C:\ProgramData\chocolatey\lib\nodejs.commandline.0.10.33\tools\jscs.cmd']
+9 error   errno: 50,
+9 error   code: 'EPERM',
+9 error   path: 'C:\\ProgramData\\chocolatey\\lib\\nodejs.commandline.0.10.33\\tools\\jscs.cmd' }
+10 error Please try running this command again as root/Administrator.
+11 error System Windows_NT 6.2.9200
+12 error command "C:\\ProgramData\\chocolatey\\lib\\nodejs.commandline.0.10.33\\tools\\node.exe" "C:\\ProgramData\\chocolatey\\lib\\npm.1.4.9\\tools\\node_modules\\npm\\bin\\npm-cli.js" "uninstall" "jscs" "-g"
+13 error cwd c:\Work\kindle notes
+14 error node -v v0.10.33
+15 error npm -v 1.4.9
+16 error path C:\ProgramData\chocolatey\lib\nodejs.commandline.0.10.33\tools\jscs.cmd
+17 error code EPERM
+18 error errno 50
+19 error stack Error: EPERM, unlink 'C:\ProgramData\chocolatey\lib\nodejs.commandline.0.10.33\tools\jscs.cmd'
+20 verbose exit [ 50, true ]
