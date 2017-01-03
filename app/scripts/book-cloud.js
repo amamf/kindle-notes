@@ -40,7 +40,7 @@ app.BookCloud.prototype.render = function(notes) {
             .style('fill', function(d, i) { return color(i); })
             .attr('text-anchor', 'middle')
             .attr('transform', function(d) {
-              return 'translate(' + [d.x, d.y] + ')rotate(' + d.rotate + ')';
+              return 'translate(' + [d.x, d.y] + ') rotate(' + d.rotate + ')';
             })
             .text(function(d) { return d.text; });
         })

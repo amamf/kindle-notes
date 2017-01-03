@@ -1,7 +1,6 @@
 (function(app) {
   'use strict';
 
-
   app.NotesParser = {
     parse: function(source) {
       var notes = source.split('==========');
